@@ -16,7 +16,7 @@ INSERT INTO `hotelsancarlos`.`aplicacion` (`pkId`, `fkIdModulo`, `nombre`, `esta
 
 INSERT INTO `hotelsancarlos`.`aplicacion` (`pkId`, `fkIdModulo`, `nombre`, `estado`, `rutaChm`, `rutaHtml`) VALUES ('1016', '1001', 'Proceso Reservacion Eventos', '1', '0', '0');
 
-
+select * from aplicacion;
 -- usuario aplicacion
 select * from usuarioaplicacion;
 
@@ -32,12 +32,13 @@ insert into usuarioaplicacion values ('1', '1010', '1','1','1','1','1');
 insert into usuarioaplicacion values ('1', '1011', '1','1','1','1','1');
 
 
+insert into usuarioaplicacion values ('1', '1015', '1','1','1','1','1');
 insert into usuarioaplicacion values ('1', '1016', '1','1','1','1','1');
 
 
 
 -- updates aplicacion 
-UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1002-Ayuda-Mantenimiento-Empresa.html' WHERE (`pkId` = '1002');
+/*UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1002-Ayuda-Mantenimiento-Empresa.html' WHERE (`pkId` = '1002');
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1003-Ayuda-Mantenimiento-Sucursal.html' WHERE (`pkId` = '1003');
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1004-Ayuda-Mantenimiento-Tipo-Cliente.html' WHERE (`pkId` = '1004');
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1005-Ayuda-Mantenimiento-Tipo-Cama.html' WHERE (`pkId` = '1005');
@@ -46,12 +47,12 @@ UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1008-Ayuda-Mantenimiento-Tipo-Servicio.html' WHERE (`pkId` = '1008');
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1009-Ayuda-Mantenimiento-Salón.html' WHERE (`pkId` = '1009');
 UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Ayuda\\Hoteleria\\AyudasMantenimientosHoteleria.chm', `rutaHtml` = '1010-Ayuda-Mantenimiento-Mesa.html' WHERE (`pkId` = '1010');
-
+*/
 
 
 select * from reporte;
 
-INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplicacion`, `estado`) VALUES ('1', 'Reporte Empresa', 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Reportes\\Hoteleria\\Empresa.rpt', '1002', 'A');
+-- INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplicacion`, `estado`) VALUES ('1', 'Reporte Empresa', 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Reportes\\Hoteleria\\Empresa.rpt', '1002', 'A');
 
 INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplicacion`, `estado`) VALUES ('1002', 'Reporte Empresa', '0', '1002', 'A');
 INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplicacion`, `estado`) VALUES ('1003', 'Reporte Sucursal', '0', '1003', 'A');
@@ -70,6 +71,7 @@ INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplica
 
 
 /*update */
+/*
 UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Reportes\\Hoteleria\\Empresa.rpt' WHERE (`idReporte` = '1002');
 UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Reportes\\Hoteleria\\Sucursal.rpt' WHERE (`idReporte` = '1003');
 UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'D:\\Proyectos_Git_Analisis\\HoteleriaMantenimientosFinal\\Reportes\\Hoteleria\\TipoCliente.rpt' WHERE (`idReporte` = '1004');
@@ -83,7 +85,7 @@ UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'C:\\Users\\Brayan Cifuentes\\Des
 
 UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'C:\\Users\\Brayan Cifuentes\\Desktop\\HoteleriaMantenimientosFinal-Ultima Version\\Reportes\\Hoteleria\\Eventos.rpt' WHERE (`idReporte` = '1016');
 
-
+*/
 
 
 /*Alters*/
@@ -109,3 +111,13 @@ CHANGE COLUMN `cantidad` `subtotal` FLOAT NOT NULL ;
 
 
 
+UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'C:\\Users\\jorgi\\Desktop\\ProyectoAn\\Hoteleria_Fase_Final-master\\HoteleriaUltima Version\\Ayuda\\Hoteleria\\Ayudas.chm', `rutaHtml` = '1015 - Ayuda Reservacion1.html' WHERE (`pkId` = '1011');
+UPDATE `hotelsancarlos`.`aplicacion` SET `rutaChm` = 'C:\\Users\\jorgi\\Desktop\\ProyectoAn\\Hoteleria_Fase_Final-master\\HoteleriaUltima Version\\Ayuda\\Hoteleria\\Ayudas.chm', `rutaHtml` = '1015 - Ayuda Eventos.html' WHERE (`pkId` = '1016');
+
+select * from aplicacion;
+INSERT INTO `hotelsancarlos`.`aplicacion` (`pkId`, `fkIdModulo`, `nombre`, `estado`, `rutaChm`, `rutaHtml`) VALUES ('1015', '1001', 'Proceso Eventos', '1', 'C:\\Users\\jorgi\\Desktop\\ProyectoAn\\Hoteleria_Fase_Final-master\\HoteleriaUltima Version\\Ayuda\\Hoteleria\\Ayudas.chm', '1015 - Ayuda Eventos.html');
+
+
+select * from reporte;
+INSERT INTO `hotelsancarlos`.`reporte` (`idReporte`, `nombre`, `ruta`, `idAplicacion`, `estado`) VALUES ('1015', 'Reporte Eventos', 'C:\\Users\\jorgi\\Desktop\\ProyectoAn\\Hoteleria_Fase_Final-master\\HoteleriaUltima Version\\Reportes\\Hoteleria\\Eventos.rpt', '1015', 'A');
+UPDATE `hotelsancarlos`.`reporte` SET `ruta` = 'C:\\Users\\jorgi\\Desktop\\ProyectoAn\\Hoteleria_Fase_Final-master\\HoteleriaUltima Version\\Reportes\\Hoteleria\\Reservas.rpt' WHERE (`idReporte` = '1011');

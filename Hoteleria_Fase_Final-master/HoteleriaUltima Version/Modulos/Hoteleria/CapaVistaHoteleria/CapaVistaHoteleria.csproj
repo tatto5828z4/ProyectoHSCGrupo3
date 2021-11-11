@@ -37,9 +37,8 @@
     <Reference Include="CapaVista">
       <HintPath>..\..\..\Componentes\ConsultasInteligentes\ConsultasInteligentes\consultasinteligentes\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaPoliza, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\BackupTrasladoGEOVVANI\BackupTrasladoGEOVVANI\EnlaceContableHoteleria_Impuestos\CapaVista\bin\Debug\CapaVistaPoliza.dll</HintPath>
+    <Reference Include="CapaVistaPoliza">
+      <HintPath>..\..\..\..\Traslado_Poliza\TrasladoPoliza\EnlaceContableHoteleria_Impuestos\CapaVista\bin\Debug\CapaVistaPoliza.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaReporte">
       <HintPath>..\..\..\Componentes\Reporteador\ComponenteReporteador\CapaVistaReporte\bin\Debug\CapaVistaReporte.dll</HintPath>

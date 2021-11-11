@@ -29,7 +29,7 @@ namespace CapaVistaHoteleria
             navegador1.campoEstado = "estatus";
 
             //ayuda 
-            navegador1.idAplicacion = "1016";
+            navegador1.idAplicacion = "1015";
 
             //ejecucion de ayuda
             navegador1.tablaAyuda = "Aplicacion";

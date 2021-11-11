@@ -149,5 +149,10 @@ namespace CapaVistaHoteleria
         {
             navegador1.funSeleccionarDTVista(dgvReservacion);
         }
+
+        private void frmReservaciones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

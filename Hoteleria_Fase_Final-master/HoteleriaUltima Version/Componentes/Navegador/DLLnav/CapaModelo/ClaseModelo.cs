@@ -615,7 +615,6 @@ namespace CapaModelo
 
             try
             {
-
                 OdbcCommand comando = new OdbcCommand(sql, conect);
                 leer = comando.ExecuteReader();
 
@@ -625,8 +624,6 @@ namespace CapaModelo
 
                     rutaAyudaHTML = leer.GetString(5);
                 }
-
-
             }
             catch (OdbcException ex)
             {
