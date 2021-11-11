@@ -1,0 +1,26 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AyudasMantenimientosHoteleria.chm
+Contents file=AyudasMantenimientosHoteleria.hhc
+Default Window=Ayudas Mantenimiento Hoteleria
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+Ayudas Mantenimiento Hoteleria="Ayudas propias del módulo de Hotelería","AyudasMantenimientosHoteleria.hhc",,"1000-Ayudas-Mantenimientos.html","1000-Ayudas-Mantenimientos.html","1002-Ayuda-Mantenimiento-Empresa.html","1002-Ayuda-Mantenimiento-Empresa","1003-Ayuda-Mantenimiento-Sucursal.html","1003-Ayuda-Mantenimiento-Sucursal",0x23520,,0xc387e,,,,,,,,0
+
+
+[FILES]
+1000-Ayudas-Mantenimientos.html
+1002-Ayuda-Mantenimiento-Empresa.html
+1003-Ayuda-Mantenimiento-Sucursal.html
+1004-Ayuda-Mantenimiento-Tipo-Cliente.html
+1005-Ayuda-Mantenimiento-Tipo-Cama.html
+1006-Ayuda-Mantenimiento-Tipo-Habitación.html
+1007-Ayuda-Mantenimiento-Habitación.html
+1008-Ayuda-Mantenimiento-Tipo-Servicio.html
+1009-Ayuda-Mantenimiento-Salón.html
+1010-Ayuda-Mantenimiento-Mesa.html
+
+[INFOTYPES]
+
