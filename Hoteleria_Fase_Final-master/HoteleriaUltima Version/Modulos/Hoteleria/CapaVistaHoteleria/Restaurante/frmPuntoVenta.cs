@@ -90,5 +90,11 @@ namespace CapaVistaHoteleria.Restaurante
         {
             co.eliminarDet(dgvDetallePedido, txtIDPedidoEnc.Text);
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            frmReportePedido reporte = new frmReportePedido();
+            reporte.Show();
+        }
     }
 }

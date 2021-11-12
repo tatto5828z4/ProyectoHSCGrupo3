@@ -93,6 +93,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblUltimoCambio = new System.Windows.Forms.Label();
             this.lblRespuestaSubT = new System.Windows.Forms.Label();
             this.lblUltimoSubT = new System.Windows.Forms.Label();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.pnlPrincipal.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedido)).BeginInit();
@@ -145,6 +146,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.dgvDetallePedido.Location = new System.Drawing.Point(3, 0);
             this.dgvDetallePedido.Name = "dgvDetallePedido";
             this.dgvDetallePedido.ReadOnly = true;
+            this.dgvDetallePedido.RowHeadersWidth = 45;
             this.dgvDetallePedido.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetallePedido.Size = new System.Drawing.Size(653, 377);
             this.dgvDetallePedido.TabIndex = 0;
@@ -180,7 +182,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblDatos.AutoSize = true;
             this.lblDatos.Location = new System.Drawing.Point(91, 32);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(98, 13);
+            this.lblDatos.Size = new System.Drawing.Size(111, 15);
             this.lblDatos.TabIndex = 13;
             this.lblDatos.Text = "Datos Encabezado";
             // 
@@ -200,7 +202,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblIDPedidoEnc.AutoSize = true;
             this.lblIDPedidoEnc.Location = new System.Drawing.Point(25, 12);
             this.lblIDPedidoEnc.Name = "lblIDPedidoEnc";
-            this.lblIDPedidoEnc.Size = new System.Drawing.Size(52, 13);
+            this.lblIDPedidoEnc.Size = new System.Drawing.Size(59, 15);
             this.lblIDPedidoEnc.TabIndex = 9;
             this.lblIDPedidoEnc.Text = "Id Pedido";
             // 
@@ -225,7 +227,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblActividad.AutoSize = true;
             this.lblActividad.Location = new System.Drawing.Point(28, 62);
             this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(51, 13);
+            this.lblActividad.Size = new System.Drawing.Size(55, 15);
             this.lblActividad.TabIndex = 11;
             this.lblActividad.Text = "Actividad";
             // 
@@ -299,7 +301,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblFecha.AutoSize = true;
             this.lblFecha.Location = new System.Drawing.Point(26, 14);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(37, 13);
+            this.lblFecha.Size = new System.Drawing.Size(41, 15);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha";
             // 
@@ -325,6 +327,7 @@ namespace CapaVistaHoteleria.Restaurante
             // 
             this.FlowLayoutPanel4.Controls.Add(this.Button13);
             this.FlowLayoutPanel4.Controls.Add(this.btnEliminar);
+            this.FlowLayoutPanel4.Controls.Add(this.btnReporte);
             this.FlowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FlowLayoutPanel4.Location = new System.Drawing.Point(0, 293);
             this.FlowLayoutPanel4.Name = "FlowLayoutPanel4";
@@ -363,7 +366,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(3, 60);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(131, 77);
+            this.btnEliminar.Size = new System.Drawing.Size(119, 77);
             this.btnEliminar.TabIndex = 636;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -506,7 +509,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.txtnumero.ForeColor = System.Drawing.Color.Black;
             this.txtnumero.Location = new System.Drawing.Point(0, 0);
             this.txtnumero.Name = "txtnumero";
-            this.txtnumero.Size = new System.Drawing.Size(269, 35);
+            this.txtnumero.Size = new System.Drawing.Size(269, 37);
             this.txtnumero.TabIndex = 617;
             this.txtnumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtnumero.TextChanged += new System.EventHandler(this.txtnumero_TextChanged);
@@ -746,7 +749,7 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblTituloMenu.ForeColor = System.Drawing.Color.White;
             this.lblTituloMenu.Location = new System.Drawing.Point(166, 2);
             this.lblTituloMenu.Name = "lblTituloMenu";
-            this.lblTituloMenu.Size = new System.Drawing.Size(85, 31);
+            this.lblTituloMenu.Size = new System.Drawing.Size(94, 36);
             this.lblTituloMenu.TabIndex = 0;
             this.lblTituloMenu.Text = "Menu";
             // 
@@ -1028,6 +1031,25 @@ namespace CapaVistaHoteleria.Restaurante
             this.lblUltimoSubT.Text = "Ultimo Subtotal:";
             this.lblUltimoSubT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.BackColor = System.Drawing.Color.Green;
+            this.btnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReporte.FlatAppearance.BorderSize = 0;
+            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.ForeColor = System.Drawing.Color.White;
+            this.btnReporte.Location = new System.Drawing.Point(128, 60);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(131, 77);
+            this.btnReporte.TabIndex = 637;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // frmPuntoVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1136,5 +1158,6 @@ namespace CapaVistaHoteleria.Restaurante
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Panel pnlDatos;
         private System.Windows.Forms.Label lblDatos;
+        internal System.Windows.Forms.Button btnReporte;
     }
 }

@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CapaControladorHoteleria">
       <HintPath>..\CapaControladorHoteleria\bin\Debug\CapaControladorHoteleria.dll</HintPath>
     </Reference>
@@ -46,12 +47,18 @@
     <Reference Include="CapaVistaSeguridadHSC">
       <HintPath>..\..\..\Componentes\Seguridad\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DLLnav">
       <HintPath>..\..\..\Componentes\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -106,6 +113,12 @@
     <Compile Include="frmRecetaEncabezado.Designer.cs">
       <DependentUpon>frmRecetaEncabezado.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportePedido.Designer.cs">
+      <DependentUpon>frmReportePedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReservaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +168,12 @@
     <Compile Include="frmTipoCama.Designer.cs">
       <DependentUpon>frmTipoCama.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportePedidos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePedidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Restaurante\frmConfigurarMesas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +209,9 @@
     <EmbeddedResource Include="frmRecetaEncabezado.resx">
       <DependentUpon>frmRecetaEncabezado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportePedido.resx">
+      <DependentUpon>frmReportePedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReservaciones.resx">
       <DependentUpon>frmReservaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +236,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoCama.resx">
       <DependentUpon>frmTipoCama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePedidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePedidos.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurante\frmConfigurarMesas.resx">
       <DependentUpon>frmConfigurarMesas.cs</DependentUpon>
@@ -242,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
