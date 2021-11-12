@@ -59,6 +59,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIDC">
+      <HintPath>..\UIDC.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmEmpresa.cs">
@@ -90,6 +93,18 @@
     </Compile>
     <Compile Include="frmMesa.Designer.cs">
       <DependentUpon>frmMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecetaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecetaDetalle.Designer.cs">
+      <DependentUpon>frmRecetaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecetaEncabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecetaEncabezado.Designer.cs">
+      <DependentUpon>frmRecetaEncabezado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmReservaciones.cs">
       <SubType>Form</SubType>
@@ -140,6 +155,18 @@
     <Compile Include="frmTipoCama.Designer.cs">
       <DependentUpon>frmTipoCama.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurante\frmConfigurarMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurante\frmConfigurarMesas.Designer.cs">
+      <DependentUpon>frmConfigurarMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurante\frmPuntoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurante\frmPuntoVenta.Designer.cs">
+      <DependentUpon>frmPuntoVenta.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmEmpresa.resx">
@@ -156,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMesa.resx">
       <DependentUpon>frmMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecetaDetalle.resx">
+      <DependentUpon>frmRecetaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecetaEncabezado.resx">
+      <DependentUpon>frmRecetaEncabezado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReservaciones.resx">
       <DependentUpon>frmReservaciones.cs</DependentUpon>
@@ -182,6 +215,33 @@
     <EmbeddedResource Include="frmTipoCama.resx">
       <DependentUpon>frmTipoCama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurante\frmConfigurarMesas.resx">
+      <DependentUpon>frmConfigurarMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurante\frmPuntoVenta.resx">
+      <DependentUpon>frmPuntoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

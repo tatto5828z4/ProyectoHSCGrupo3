@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaVistaSeguridadHSC;
 using CapaVistaReporte;
 using CapaVista;
+using RecetasAreaHoteleria;
 
 namespace CapaVistaHoteleria
 {
@@ -173,6 +174,30 @@ namespace CapaVistaHoteleria
             proc.EnableRaisingEvents = false;
             proc.StartInfo.FileName = "calc";
             proc.Start();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Restaurante.frmConfigurarMesas mesas = new Restaurante.frmConfigurarMesas();
+            mesas.Show();
+        }
+
+        private void pundoDeVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Restaurante.frmPuntoVenta venta = new Restaurante.frmPuntoVenta();
+            venta.Show();
+        }
+
+        private void recetaEncabezadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecetaEncabezado recetaEnc = new frmRecetaEncabezado();
+            recetaEnc.Show();
+        }
+
+        private void recetaDetalladoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecetaDetalle detalle = new frmRecetaDetalle();
+            detalle.Show();
         }
     }
 }
